@@ -3,52 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Irfan Rayachuru | Portfolio</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { background-color: #f4f4f4; color: #333; }
-        .container { width: 90%; max-width: 1200px; margin: auto; }
-        header { background: url('banner-placeholder.jpg') no-repeat center center/cover; height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; margin: 20px auto; display: block; border: 4px solid white; }
-        h1, h2 { text-align: center; }
-        .about, .portfolio, .contact { padding: 50px 20px; }
-        .portfolio-items { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-        .portfolio-item { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; }
-        footer { background: #222; color: white; text-align: center; padding: 20px; }
-        .socials a { color: white; margin: 0 10px; text-decoration: none; font-size: 20px; }
-    </style>
+    <meta name="description" content="Irfan Rayachuru - Senior Technology Architect and Product Owner specializing in Industrial IoT, AI-driven cloud solutions, and DataMosaix Private Cloud (DMPC).">
+    <meta name="keywords" content="Irfan Rayachuru, Product Owner, Senior Technology Architect, Industrial IoT, DataMosaix, DMPC, AI-driven IoT, Edge Computing, Data Governance, Cloud Security">
+    <meta name="author" content="Irfan Rayachuru">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Irfan Rayachuru | Technology Architect">
+    <meta property="og:description" content="Explore the professional insights and technical expertise of Irfan Rayachuru, an industry leader in IoT, AI, and cloud-based solutions.">
+    <meta property="og:image" content="https://irfanrayachuru.com/assets/images/irfan-rayachuru.png">
+    <meta property="og:url" content="https://irfanrayachuru.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Irfan Rayachuru | Tech Expert">
+    <meta name="twitter:description" content="Learn more about Irfan Rayachuru’s work in IoT, AI, and cloud technologies.">
+    <meta name="twitter:image" content="https://irfanrayachuru.com/assets/images/irfan-rayachuru.png">
+
+    <meta name="subject" content="Technology, AI, IoT, Cloud Solutions">
+    <meta name="copyright" content="© 2025 Irfan Rayachuru">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://irfanrayachuru.com">
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Irfan Rayachuru",
+          "url": "https://irfanrayachuru.com",
+          "image": "https://irfanrayachuru.com/your-image.jpg",
+          "jobTitle": "Technology Architect, Digital Transformation, Full Stack Developer, Typescript",
+          "sameAs": [
+            "https://linkedin.com/in/irfanrayachuru266b30b8",
+            "https://github.com/irfan-ir"
+          ],
+          "knowsAbout": ["Web Technologies", "Typescript", "NodeJS", "Python", "AWS", "Industrial IoT", "Data Security", "Data Governance", "Software Architecture"]
+        }
+    </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Irfan Rayachuru</h1>
-            <p>Product Owner | Senior Technology Architect | UX Enthusiast</p>
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <a href="#home">Home</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#about">About</a>
+                <a href="#footer">Contact</a>
+            </div>
         </div>
-    </header>
-    <section class="about">
-        <img src="profile-placeholder.jpg" alt="Irfan Rayachuru" class="profile-img">
-        <h2>About Me</h2>
-        <p>Highly experienced Frontend Developer, UX Designer, and Product Owner with expertise in Industrial IoT platforms, software architecture, and user experience design.</p>
-    </section>
-    <section class="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-items">
-            <div class="portfolio-item">Project 1 - Description</div>
-            <div class="portfolio-item">Project 2 - Description</div>
-            <div class="portfolio-item">Project 3 - Description</div>
+        <div class="main-section" id="home">
+            <div class="profile">
+                <h1 class="d-none">Irfan Rayachuru - Product Owner & Senior Technology Architect</h1>
+                <h2 class="d-none">Expert in Industrial IoT, AI-driven Cloud, and DataMosaix Private Cloud</h2>
+                <h3 class="d-none">Building Scalable Solutions for the Future of Technology</h3>
+                <img src="assets/images/irfan-rayachuru.png" alt="Irfan Rayachuru">
+                <h1>Irfan Rayachuru</h1>
+                <p>Technology Architect | Full Stack Developer | Typescript | Python | AWS | Product Management</p>
+                <div class="social-links d-none">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <div class="banner"></div>
         </div>
-    </section>
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com | LinkedIn: <a href="#">LinkedIn Profile</a></p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Irfan Rayachuru</p>
-        <div class="socials">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-            <a href="#">Twitter</a>
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+            <div class="thumbnail-grid">
+                <div class="thumbnail"><img src="assets/images/getting-started-to-tech.jpg" alt="Blog"><p>Getting Started to Tech!</p></div>
+            </div>
         </div>
-    </footer>
+        <div class="section about-section" id="about">
+            <h2>About Me</h2>
+            <p>I am a Technology Architect with over 9 years of experience in building scalable, high-performance enterprise applications. My expertise lies in bridging technology with business strategy, ensuring that products are not only technically robust but also aligned with market needs and user expectations.</p>
+            <p>Throughout my career, I have led cross-functional teams, managed complex software architectures, and driven the successful delivery of data-driven applications. I thrive on solving real-world problems through intelligent automation, cloud-native architectures, and seamless user experiences.</p>
+            <h4>Core Expertise & Skills</h4>
+            <ul>
+                <li><b>Software & Cloud Architecture</b> – Designing scalable, containerized, and microservices-based applications.</li>
+                <li><b>Enterprise Data & IoT Systems</b> – Expertise in data processing, governance, and real-time analytics.</li>
+                <li><b>User-Centric Design & UX Optimization</b> – Ensuring that enterprise applications offer intuitive and efficient user experiences.</li>
+                <li><b>Product Leadership & Roadmap Strategy</b> – Defining vision, refining requirements, and aligning technology with business goals.</li>
+                <li><b>Automated Release & Deployment Strategies</b> – Driving structured, process-driven releases to improve product quality and efficiency.</li>
+            </ul>
+            <h4>Beyond Work – The Personal Side</h4>
+            <p>When I’m not working on technology-driven challenges, I enjoy exploring new innovations, problem-solving, and staying ahead of industry trends. My long-term vision is to create a self-sustaining lifestyle, blending technology with nature, where I can stay at my home with farmland, grow my own food, and enjoy a peaceful life while staying connected to innovation.</p>
+        </div>
+        <div class="section d-none" id="accomplishments">
+            <h2>Accomplishments & Certifications</h2>
+            <div class="thumbnails">
+                <div class="thumbnail">Certification 1</div>
+                <div class="thumbnail">Certification 2</div>
+                <div class="thumbnail">Certification 3</div>
+            </div>
+        </div>
+        <div class="section d-none" id="coming-soon">
+            <h2>Coming Soon</h2>
+            <div class="thumbnails">
+                <div class="thumbnail">Feature 1</div>
+                <div class="thumbnail">Feature 2</div>
+            </div>
+        </div>
+        <div class="section d-none" id="career-milestones">
+            <h2>Career Milestones</h2>
+            <div class="milestone-timeline">
+                <div class="milestone">
+                    <h3>Company Name</h3>
+                    <p>Designation (MM-YY to MM-YY)</p>
+                    <p>Skills: Skill1, Skill2</p>
+                    <p>Major Contribution: Key achievement</p>
+                </div>
+                <div class="milestone">
+                    <h3>Company Name</h3>
+                    <p>Designation (MM-YY to MM-YY)</p>
+                    <p>Skills: Skill1, Skill2</p>
+                    <p>Major Contribution: Key achievement</p>
+                </div>
+            </div>
+        </div>
+        <div class="section footer" id="footer">
+            <p>© 2025 Irfan Rayachuru. All rights reserved.</p>
+            <!-- <a href="#">Buy Me a Coffee</a> -->
+            <a href="www.linkedin.com/in/irfanrayachuru266b30b8" target="_blank">LinkedIn</a>
+            <a href="mailto:rayachuruirfan@gmail.com">Mail Me</a>
+            <!-- <a href="#">GitHub</a>
+            <a href="#">Twitter</a> -->
+        </div>
+    </div>
 </body>
 </html>
