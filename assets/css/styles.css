@@ -756,8 +756,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 .skill-bar-list { display: flex; flex-direction: column; gap: 20px; }
 
-.skill-bar-item {}
-
 .skill-bar-header {
   display: flex;
   justify-content: space-between;
@@ -1335,8 +1333,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .skill-bars { padding: 18px; }
 
   .timeline-card { padding: 16px; }
-
-  .blog-card {}
 
   .footer-links { gap: 16px; flex-wrap: wrap; justify-content: center; }
 }
