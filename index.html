@@ -108,7 +108,7 @@
         <span class="cursor" aria-hidden="true">|</span>
       </div>
       <p class="hero-description reveal-up">
-        Senior Technology Architect &amp; Product Owner with <strong>9+ years</strong> of experience
+        Senior Technology Architect &amp; Product Owner with <strong><span id="heroYearsExp">9</span>+ years</strong> of experience
         building scalable enterprise systems across Industrial IoT, AI-driven cloud, and full-stack development.
       </p>
       <div class="hero-cta reveal-up">
@@ -123,7 +123,7 @@
       </div>
       <div class="hero-stats reveal-up">
         <div class="stat">
-          <span class="stat-number" data-count="9">0</span><span class="stat-plus">+</span>
+          <span class="stat-number" data-count="9" data-dynamic="yearsExp">0</span><span class="stat-plus">+</span>
           <span class="stat-label">Years Exp.</span>
         </div>
         <div class="stat-divider" aria-hidden="true"></div>
@@ -155,7 +155,7 @@
             I'm a <strong>Technology Architect</strong> who bridges the gap between complex engineering challenges and real-world business impact.
           </p>
           <p>
-            With over <strong>9 years of experience</strong>, I've led cross-functional teams, designed microservices-based cloud architectures, and delivered data-driven applications that scale. My passion lies in <strong>Industrial IoT</strong>, <strong>AI-powered systems</strong>, and building products that truly matter.
+            With over <strong><span id="aboutYearsExp">9</span> years of experience</strong>, I've led cross-functional teams, designed microservices-based cloud architectures, and delivered data-driven applications that scale. My passion lies in <strong>Industrial IoT</strong>, <strong>AI-powered systems</strong>, and building products that truly matter.
           </p>
           <p>
             Beyond code, I believe great technology should be intuitive, resilient, and aligned with human needs. I thrive where I can solve real problems through intelligent automation and seamless user experiences.
@@ -497,13 +497,40 @@
         <a href="https://github.com/irfan-ir" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
         <a href="mailto:rayachuruirfan@gmail.com" aria-label="Send email">Email</a>
       </div>
-      <p class="footer-copy">&copy; 2025 Irfan Rayachuru. All rights reserved.</p>
+      <p class="footer-copy">&copy; <span id="copyrightYear">2025</span> Irfan Rayachuru. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
   (function() {
     'use strict';
+
+    // ── Dynamic computed values ──────────────────────────────────────────────
+    // Years of experience: counting from June 1, 2015 (career start date)
+    var CAREER_START  = new Date(2015, 5, 1); // month is 0-indexed; 5 = June
+    var NOW           = new Date();
+    var MS_PER_DAY    = 1000 * 60 * 60 * 24;
+    var DAYS_PER_YEAR = 365.25; // accounts for leap years
+    var yearsExp      = Math.floor((NOW - CAREER_START) / (MS_PER_DAY * DAYS_PER_YEAR));
+    var currentYear  = NOW.getFullYear();
+
+    // Inject years of experience into hero description
+    var heroYearsExpEl = document.getElementById('heroYearsExp');
+    if (heroYearsExpEl) heroYearsExpEl.textContent = yearsExp;
+
+    // Inject years of experience into About section
+    var aboutYearsExpEl = document.getElementById('aboutYearsExp');
+    if (aboutYearsExpEl) aboutYearsExpEl.textContent = yearsExp;
+
+    // Update footer copyright year
+    var copyrightYearEl = document.getElementById('copyrightYear');
+    if (copyrightYearEl) copyrightYearEl.textContent = currentYear;
+
+    // Update the animated counter for "Years Exp." stat so it animates
+    // to the correct number rather than the hardcoded fallback
+    var yearsStatEl = document.querySelector('.stat-number[data-dynamic="yearsExp"]');
+    if (yearsStatEl) yearsStatEl.setAttribute('data-count', yearsExp);
+    // ── End dynamic values ───────────────────────────────────────────────────
 
     var roles = ['Technology Architect','Product Owner','Full Stack Developer','IoT & Cloud Specialist','Problem Solver'];
     var roleIdx = 0, charIdx = 0, deleting = false;
